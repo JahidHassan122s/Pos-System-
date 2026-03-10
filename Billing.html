@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grocery POS - Billing</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Shop Name</h2>
+    <ul>
+      <li>Dashboard</li>
+      <li>POS Billing</li>
+      <li>Products</li>
+      <li>Customers</li>
+      <li>Suppliers</li>
+      <li>Purchase</li>
+      <li>Reports</li>
+      <li>Settings</li>
+      <li>Backup</li>
+    </ul>
+  </div>
+
+  <div class="main-content">
+    <header>
+      <input type="text" placeholder="Search Product or Scan Barcode">
+      <div class="user-profile">Admin</div>
+    </header>
+
+    <section class="billing">
+      <div class="product-panel">
+        <h3>Products</h3>
+        <!-- Product list dynamically populated -->
+        <div class="product-item">Rice - 72 BDT <button>Add</button></div>
+        <div class="product-item">Oil - 150 BDT <button>Add</button></div>
+      </div>
+
+      <div class="cart-panel">
+        <h3>Cart</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Product</th>
+              <th>Qty</th>
+              <th>Price</th>
+              <th>Total</th>
+            </tr>
+          </thead>
+          <tbody id="cart-body">
+            <!-- Cart items appear here -->
+          </tbody>
+        </table>
+        <div class="totals">
+          Subtotal: <span id="subtotal">0</span> BDT <br>
+          Discount: <span id="discount">0</span> BDT <br>
+          Total: <span id="total">0</span> BDT
+        </div>
+        <div class="payment-buttons">
+          <button>Cash</button>
+          <button>Bkash</button>
+          <button>Nagad</button>
+          <button>Card</button>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

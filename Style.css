@@ -1,0 +1,93 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #2c3e50;
+  color: white;
+  height: 100vh;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.sidebar ul li:hover {
+  background-color: #34495e;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  background-color: #ecf0f1;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background-color: white;
+  flex: 1;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.billing {
+  display: flex;
+  gap: 20px;
+}
+
+.product-panel, .cart-panel {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.product-panel {
+  flex: 1;
+}
+
+.cart-panel {
+  flex: 2;
+}
+
+.cart-panel table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.cart-panel table, .cart-panel th, .cart-panel td {
+  border: 1px solid #bdc3c7;
+  padding: 8px;
+  text-align: center;
+}
+
+.payment-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+}
